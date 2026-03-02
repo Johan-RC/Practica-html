@@ -1,0 +1,96 @@
+/*ESTILOS GENERALES*/
+
+body { /*Aplica estilos a toda la página*/
+    margin: 0; /*Elimina el margen automático del navegador*/
+    background: #0b0b0b; /*Fondo negro oscuro*/
+    color: #e6e6e6; /*Color de texto gris claro*/
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /*Fuente principal del sitio*/
+}
+
+
+/* HEADER*/
+
+.site-header { /*Contenedor principal del encabezado*/
+    background: #0d0d0d; /*Fondo ligeramente distinto al body*/
+    border-bottom: 1px solid rgba(255,255,255,0.05); /*Línea inferior sutil*/
+    padding: 20px 36px; /*Espaciado interno arriba/abajo y lados*/
+}
+
+
+.header-top { /*Contenedor que agrupa logo y navegación*/
+    display: flex; /*Activa Flexbox*/
+    flex-direction: column; /*Coloca elementos en columna (modo móvil)*/
+    gap: 14px; /*Espacio entre los elementos hijos*/
+    align-items: center; /*Centra horizontalmente*/
+}
+
+
+/*RESPONSIVE*/
+
+@media (min-width: 720px) { /*Aplica estilos cuando la pantalla es mayor a 720px*/
+    .header-top {
+        flex-direction: row; /*Cambia a fila en pantallas grandes*/
+        justify-content: space-between; /* Separa logo y menú hacia los extremos*/
+        align-items: center; /* Centra verticalmente*/
+    }
+}
+
+
+/*LOGO*/
+
+.logo { /*Contenedor del logo*/
+    display: flex; /*Permite alinear los textos en línea*/
+    align-items: baseline; /*Alinea el texto por la base*/
+    gap: 10px; /*Espacio entre <html> y blog*/
+    font-weight: 700; /*Texto en negrita*/
+}
+
+.logo .tag { /*Texto tipo código (<html>)*/
+    color: #74f57b; /*Color verde estilo programación*/
+    font-family: monospace; /*Fuente monoespaciada*/
+    font-size: 20px; /*Tamaño de texto*/
+}
+
+.logo .brand { /*Nombre del sitio*/
+    color: #ffd200; /*Color amarillo para destacar*/
+    font-size: 22px; /*Tamaño un poco más grande*/
+}
+
+
+/*NAVEGACIÓN*/
+
+.nav-list { /*Lista que contiene los enlaces*/
+    list-style: none; /*Quita los puntos de la lista*/
+    margin: 0; /*Elimina margen por defecto*/
+    padding: 0; /*Elimina padding por defecto*/
+    display: flex; /*Coloca los elementos en fila*/
+    gap: 28px; /*Espacio entre enlaces*/
+    flex-wrap: wrap; /*Permite que bajen si no caben*/
+    justify-content: center; /*Centra el menú horizontalmente*/
+}
+
+.nav-list a { /*Estilo de los enlaces*/
+    color: #9da0a2; /*Color gris claro*/
+    text-decoration: none; /*Quita el subrayado*/
+    text-transform: uppercase; /*Convierte texto a mayúsculas*/
+    letter-spacing: 6px; /*Separa las letras*/
+    font-size: 12px; /*Tamaño pequeño*/
+    padding: 6px 0; /*Espacio vertical para mejor clic*/
+    display: inline-block; /*Permite aplicar padding y bordes*/
+    transition: color 150ms ease, border-bottom-color 150ms ease; /*Transición suave*/
+    border-bottom: 2px solid transparent; /*Línea inferior invisible*/
+}
+
+.nav-list a:hover { /*Cuando pasas el mouse*/
+    color: #ffffff; /*Se vuelve blanco*/
+    border-bottom-color: rgba(255,255,255,0.12); /*Aparece línea inferior*/
+}
+
+
+/*CLASE AUXILIAR BOTONES*/
+
+.botons { /*Clase opcional para agrupar botones*/
+    display: inline-flex; /*Permite alinearlos en línea*/
+    align-items: center; /*Centra verticalmente*/
+    gap: 8px; /*Espacio entre botones*/
+}
