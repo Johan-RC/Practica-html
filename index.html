@@ -1,36 +1,47 @@
-<!DOCTYPE html><!-- declara que el documento es HTML5 -->
-<html lang="es"> <!--elemento raiz con atributo de idioma español-->
-<head> <!-- contenedor de metadatos y enlaces a recursos información sobre la página.
-Aquí NO va contenido visible. -->
-    <meta charset="UTF-8"><!-- codificación de caracteres UTF-8 Permite mostrar correctamente:
+<!DOCTYPE html> <!-- Indica al navegador que este documento está escrito en HTML5 (versión moderna de HTML) -->
+<html lang="es"> <!-- Elemento raíz de toda la página | "lang=es" indica que el idioma es español -->
+<head> <!-- Contiene información NO visible (configuración, enlaces, metadatos) -->
+<meta charset="UTF-8">  <!-- Define la codificación de caracteres UTF-8 | Permite usar tildes, ñ y símbolos sin errores -->
 
-tildes, y simbolos especiales -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- responsive: escala según ancho de dispositivo  -->
-    <link rel="stylesheet" href="/estilos.css"> <!-- enlace al archivo CSS local -->
-   <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"> <!-- CDN de Bootstrap (opcional)  Bootstrap, que es un framework de estilos.
-Sirve para: Diseños modernos,Botones, tarjetas, grids ya hechos
-CDN significa que lo cargas desde internet, no desde tu computadora.-->
-    <title>Practicas-HTML</title> <!-- título que aparece en la pestaña del navegador -->
-    </head>
-    <body> <!--Aquí va todo lo que el usuario ve en la página. -->
-    <header class="site-header"> <!-- encabezado semántico de la página Generalmente contiene: logo, Menu, Navegacion-->
-    <div class="header-top"> <!-- contenedor que agrupa logo y navegación -->
-    <div class="logo"> <!-- bloque del logo/identidad -->
-    <span class="tag">&lt;html&gt;</span> <!-- etiqueta estilo código (ej: <html>) -->
-    <span class="brand">blog</span> <!-- nombre de la marca/ sitio -->
-    </div>
-    <nav class="nav"> <!-- elemento nav que contiene la navegación del menú principal -->
-    <ul class="nav-list"> <!-- lista sin estilo que contiene los enlaces -->
-    <li><a href="#">Estructurales</a></li> <!-- enlace a sección Estructurales -->
-    <li><a href="#">Texto</a></li> <!-- enlace a sección Texto -->
-    <li><a href="#">Listas</a></li> <!-- enlace a sección Listas -->
-    <li><a href="#">Formularios</a></li> <!-- enlace a sección Formularios -->
-    <li><a href="#">Tablas</a></li> <!-- enlace a sección Tablas -->
-    <li><a href="#">Multimedia</a></li> <!-- enlace a sección Multimedia -->
-    </ul> 
-    </nav> <!-- Cierra la sección de navegación --> 
-    </div>  <!--Cierra un contenedor--> 
-    </header> <!-- Cierra el encabezado de la página.-->
-    </body>   <!-- Cierra el cuerpo del documento, Todo lo visible debe estar dentro del <body>. -->
-    <script src="/function.js"></script> <!-- enlace a script JS local (asegúrate que la ruta sea correcta) -->
-    </html> <!-- cierra el documento HTML -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">     <!-- Hace que la página sea responsive | Se adapta al tamaño de pantallas como celulares y tablets -->
+
+<link rel="stylesheet" href="/style.css"> <!-- Conecta un archivo CSS externo | Sirve para aplicar estilos (colores, tamaños, diseño) -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">  <!-- Importa Bootstrap desde internet (CDN) | Framework que facilita estilos y diseño responsivo -->
+<title>Practicas-HTML</title>  <!-- Título de la página | Es el nombre que aparece en la pestaña del navegador -->
+</head>
+
+<body> <!-- Contenido visible de la página web -->
+
+<header class="site-header"> <!-- Encabezado principal | Se usa para logos, menús o presentación del sitio -->
+<div class="header-top"> <!-- Contenedor (div) | Agrupa elementos como logo y menú para organizarlos -->
+
+<div class="logo">  <!-- Sección del logo | Representa la identidad visual del sitio -->
+<span class="tag">&lt;html&gt;</span>  <!-- Texto decorativo tipo etiqueta de código | Muestra "<html>" como estilo -->
+<span class="brand">blog</span>  <!-- Nombre del sitio | Texto visible que identifica la página -->
+</div>
+<nav class="nav"> <!-- Sección de navegación | Contiene enlaces para moverse dentro del sitio -->
+
+<ul class="nav-list"> <!-- Lista desordenada (ul) | Agrupa los enlaces del menú -->
+<li><a href="#">Estructurales</a></li> <!-- Elemento de lista (li) con enlace (a) | "#" significa que aún no tiene destino -->
+
+<li><a href="#">Texto</a></li> <!-- Enlace a sección de texto -->
+
+<li><a href="#">Listas</a></li> <!-- Enlace a sección de listas -->
+
+<li><a href="#">Formularios</a></li> <!-- Enlace a sección de formularios -->
+
+ <li><a href="#">Tablas</a></li> <!-- Enlace a sección de tablas -->
+
+<li><a href="#">Multimedia</a></li>   <!-- Enlace a sección de contenido multimedia (imágenes, video, audio) -->
+
+ </ul>    <!-- Cierra la lista desordenada (ul): Indica que ya no hay más elementos de la lista -->
+</nav>    <!-- Cierra la sección de navegación: Finaliza el bloque del menú -->
+</div>    <!-- Cierra un contenedor (div): Termina una agrupación de elementos -->
+</header> <!-- Cierra el encabezado: Finaliza la parte superior de la página -->
+</body>   <!-- Cierra el cuerpo: Indica el final de todo el contenido visible -->
+
+<script src="/funtion.js"></script> <!-- Enlace a archivo JavaScript | Permite agregar funciones, eventos y lógica a la página -->
+
+
+</html> <!-- Fin del documento HTML -->
