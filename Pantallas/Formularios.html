@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog HTML — Formularios</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<header class="cabecera-sitio">
+  <a href="index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
+  <nav class="menu-sitio">
+    <ul class="lista-menu">
+      <li><a href="estructurales.html" class="enlace-menu">Estructurales</a></li>
+      <li><a href="texto.html"         class="enlace-menu">Texto</a></li>
+      <li><a href="listas.html"        class="enlace-menu">Listas</a></li>
+      <li><a href="formularios.html"   class="enlace-menu">Formularios</a></li>
+      <li><a href="tablas.html"        class="enlace-menu">Tablas</a></li>
+      <li><a href="multimedia.html"    class="enlace-menu">Multimedia</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-categoria">
+
+  <nav class="ruta-navegacion">
+    <a href="index.html" class="enlace-ruta">Inicio</a>
+    <span class="separador-ruta">/</span>
+    <span class="pagina-actual-ruta">Formularios</span>
+  </nav>
+
+  <div class="encabezado-pagina">
+    <span class="numero-pagina">04 / 06</span>
+    <h1 class="titulo-pagina">Formularios</h1>
+    <p class="subtitulo-pagina">
+      Etiquetas para crear formularios interactivos. Permiten al usuario
+      ingresar datos y enviarlos al servidor o procesarlos con JavaScript.
+    </p>
+  </div>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <form>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;form&gt;</span>
+      <span class="insignia-categoria insignia-formulario">Formularios</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Contenedor que agrupa todos los campos del formulario. Define hacia dónde se enviarán
+          los datos (<code>action</code>) y el método de envío (<code>method</code>).
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-comentario">&lt;!-- action: URL destino. method: "get" o "post" --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;form</span> <span class="codigo-atributo">action</span>=<span class="codigo-valor">"/enviar"</span> <span class="codigo-atributo">method</span>=<span class="codigo-valor">"post"</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-comentario">&lt;!-- aquí van los campos --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;/form&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Usa <code>method="post"</code> para enviar datos sensibles (contraseñas, información personal).
+          Usa <code>method="get"</code> para búsquedas donde quieras que los datos aparezcan en la URL.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: label e input
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;label&gt; &lt;input&gt;</span>
+      <span class="insignia-categoria insignia-formulario">Formularios</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          <code>&lt;label&gt;</code> — Etiqueta descriptiva que identifica a qué campo pertenece.
+          Al hacer clic en el label, el campo correspondiente recibe el foco.<br>
+          <code>&lt;input&gt;</code> — Campo de entrada de datos. Cambia completamente según el atributo <code>type</code>.
+          Es una etiqueta vacía (sin cierre).
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Tipos de input más usados</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-comentario">&lt;!-- Texto libre --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"text"</span><span class="codigo-etiqueta">&gt;</span><br>
+            <span class="codigo-comentario">&lt;!-- Correo electrónico (valida el formato) --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"email"</span><span class="codigo-etiqueta">&gt;</span><br>
+            <span class="codigo-comentario">&lt;!-- Contraseña (oculta los caracteres) --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"password"</span><span class="codigo-etiqueta">&gt;</span><br>
+            <span class="codigo-comentario">&lt;!-- Número --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"number"</span><span class="codigo-etiqueta">&gt;</span><br>
+            <span class="codigo-comentario">&lt;!-- Fecha --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"date"</span><span class="codigo-etiqueta">&gt;</span><br>
+            <span class="codigo-comentario">&lt;!-- Casilla de verificación --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"checkbox"</span><span class="codigo-etiqueta">&gt;</span><br>
+            <span class="codigo-comentario">&lt;!-- Botón de opción (uno a la vez) --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"radio"</span><span class="codigo-etiqueta">&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Cómo enlazar label con input</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-comentario">&lt;!-- El "for" del label debe ser igual al "id" del input --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;label</span> <span class="codigo-atributo">for</span>=<span class="codigo-valor">"nombre"</span><span class="codigo-etiqueta">&gt;</span>Tu nombre:<span class="codigo-etiqueta">&lt;/label&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;input</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"text"</span> <span class="codigo-atributo">id</span>=<span class="codigo-valor">"nombre"</span> <span class="codigo-atributo">name</span>=<span class="codigo-valor">"nombre"</span> <span class="codigo-atributo">required</span><span class="codigo-etiqueta">&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Siempre vincula cada <code>&lt;label&gt;</code> con su campo usando los mismos valores en <code>for</code> e <code>id</code>.
+          Usa <code>required</code> para campos obligatorios y <code>placeholder</code> para dar un ejemplo del
+          valor esperado.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: textarea, select, button, fieldset
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;textarea&gt; &lt;select&gt; &lt;button&gt; &lt;fieldset&gt; &lt;legend&gt;</span>
+      <span class="insignia-categoria insignia-formulario">Formularios</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          <code>&lt;textarea&gt;</code> — Área de texto de múltiples líneas para comentarios o mensajes largos.<br>
+          <code>&lt;select&gt;</code> / <code>&lt;option&gt;</code> — Lista desplegable donde el usuario elige una opción.<br>
+          <code>&lt;button&gt;</code> — Botón interactivo para enviar el formulario u otra acción.<br>
+          <code>&lt;fieldset&gt;</code> / <code>&lt;legend&gt;</code> — Agrupa campos relacionados dentro del formulario
+          y les pone un título visible.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-comentario">&lt;!-- Área de texto: rows controla la altura --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;textarea</span> <span class="codigo-atributo">id</span>=<span class="codigo-valor">"mensaje"</span> <span class="codigo-atributo">name</span>=<span class="codigo-valor">"mensaje"</span> <span class="codigo-atributo">rows</span>=<span class="codigo-valor">"4"</span><span class="codigo-etiqueta">&gt;&lt;/textarea&gt;</span><br>
+            <br>
+            <span class="codigo-comentario">&lt;!-- Lista desplegable --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;select</span> <span class="codigo-atributo">name</span>=<span class="codigo-valor">"nivel"</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;option</span> <span class="codigo-atributo">value</span>=<span class="codigo-valor">"basico"</span><span class="codigo-etiqueta">&gt;</span>Básico<span class="codigo-etiqueta">&lt;/option&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;option</span> <span class="codigo-atributo">value</span>=<span class="codigo-valor">"avanzado"</span><span class="codigo-etiqueta">&gt;</span>Avanzado<span class="codigo-etiqueta">&lt;/option&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;/select&gt;</span><br>
+            <br>
+            <span class="codigo-comentario">&lt;!-- Botón de envío --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;button</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"submit"</span><span class="codigo-etiqueta">&gt;</span>Enviar<span class="codigo-etiqueta">&lt;/button&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Formulario funcional completo</span>
+        <div class="caja-demostracion">
+          <!-- onsubmit: evita que recargue la página y muestra un mensaje -->
+          <form class="estilo-formulario-demo" onsubmit="event.preventDefault(); alert('¡Formulario enviado correctamente!');">
+
+            <fieldset class="estilo-fieldset-demo">
+              <legend class="estilo-legend-demo">Datos personales</legend>
+
+              <label class="estilo-label-demo" for="campo-nombre">Nombre completo</label>
+              <input class="estilo-input-demo" type="text" id="campo-nombre" name="nombre" placeholder="Ej: María García" required>
+
+              <label class="estilo-label-demo" for="campo-correo">Correo electrónico</label>
+              <input class="estilo-input-demo" type="email" id="campo-correo" name="correo" placeholder="correo@ejemplo.com">
+
+              <label class="estilo-label-demo" for="campo-fecha">Fecha de nacimiento</label>
+              <input class="estilo-input-demo" type="date" id="campo-fecha" name="fecha">
+            </fieldset>
+
+            <fieldset class="estilo-fieldset-margen-demo">
+              <legend class="estilo-legend-demo">Preferencias</legend>
+
+              <label class="estilo-label-demo" for="campo-nivel">Nivel de HTML</label>
+              <select class="estilo-select-demo" id="campo-nivel" name="nivel">
+                <option value="">Selecciona una opción...</option>
+                <option value="principiante">Principiante</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+              </select>
+
+              <label class="estilo-label-checkbox-demo">
+                <input class="estilo-checkbox-demo" type="checkbox" name="boletin">
+                Recibir novedades por correo
+              </label>
+            </fieldset>
+
+            <label class="estilo-label-demo" for="campo-mensaje">Mensaje o consulta</label>
+            <textarea class="estilo-textarea-demo" id="campo-mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+            <button class="estilo-boton-demo" type="submit">Enviar formulario</button>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Usa <code>&lt;fieldset&gt;</code> para agrupar campos relacionados (datos personales, preferencias, etc.).
+          Siempre especifica el <code>type</code> del <code>&lt;button&gt;</code>: <code>type="submit"</code> para enviar,
+          <code>type="reset"</code> para limpiar, <code>type="button"</code> para acciones con JavaScript.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <nav class="ruta-navegacion">
+    <a href="listas.html" class="enlace-ruta">← Anterior: Listas</a>
+    <span class="separador-ruta">·</span>
+    <a href="tablas.html" class="enlace-ruta">Siguiente: Tablas →</a>
+  </nav>
+
+</main>
+
+<footer class="pie-sitio">
+  <p class="texto-pie">Blog Educativo · Etiquetas HTML · &copy; 2025</p>
+  <p class="texto-pie">
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="enlace-pie" target="_blank" rel="noopener">MDN Web Docs</a> ·
+    <a href="https://www.w3schools.com/html/" class="enlace-pie" target="_blank" rel="noopener">W3Schools</a>
+  </p>
+</footer>
+
+  <!-- Botón flotante para volver al inicio de la página -->
+  <button class="boton-arriba" id="boton-arriba" title="Volver arriba">↑</button>
+
+  <!-- Cargamos el archivo JavaScript del blog -->
+  <script src="funciones.js" defer></script>
+</body>
+</html>

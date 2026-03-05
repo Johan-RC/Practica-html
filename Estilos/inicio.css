@@ -1,0 +1,789 @@
+/* =============================================================
+   ESTILOS COMPARTIDOS — Blog Educativo de Etiquetas HTML
+   Este archivo lo usan TODAS las páginas del blog.
+   Si quieres cambiar un color o fuente, solo lo cambias aquí.
+============================================================= */
+
+/* ── IMPORTAR FUENTES DE GOOGLE ── */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap');
+
+
+/* ─────────────────────────────────────────────────────────────
+   VARIABLES DE COLOR
+───────────────────────────────────────────────────────────── */
+:root {
+  --color-fondo:       #0d0d0d;
+  --color-superficie:  #161616;
+  --color-tarjeta:     #1e1e1e;
+  --color-borde:       #2a2a2a;
+  --color-amarillo:    #f0e040;
+  --color-verde-agua:  #40e0d0;
+  --color-rojo:        #ff6b6b;
+  --color-texto:       #e8e8e8;
+  --color-gris:        #888888;
+  --color-codigo:      #111111;
+  --color-morado:      #a78bfa;
+  --color-naranja:     #fb923c;
+  --color-verde:       #34d399;
+  --color-rosa:        #f472b6;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   ESTILOS BASE
+───────────────────────────────────────────────────────────── */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: 'Fraunces', serif;
+  line-height: 1.7;
+}
+
+/* Barra de scroll personalizada */
+::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background-color: var(--color-fondo); }
+::-webkit-scrollbar-thumb { background-color: var(--color-borde); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background-color: var(--color-gris); }
+
+
+/* ─────────────────────────────────────────────────────────────
+   CABECERA DEL SITIO
+───────────────────────────────────────────────────────────── */
+
+.cabecera-sitio {
+  background-color: var(--color-superficie);
+  border-bottom: 1px solid var(--color-borde);
+  padding: 1.25rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.logo-sitio {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.1rem;
+  color: var(--color-amarillo);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.logo-sitio-acento {
+  color: var(--color-verde-agua);
+}
+
+.menu-sitio {
+  display: flex;
+  align-items: center;
+}
+
+/* Lista sin viñetas del menú */
+.lista-menu {
+  display: flex;
+  list-style: none;
+  gap: 0.2rem;
+  flex-wrap: wrap;
+}
+
+.enlace-menu {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: var(--color-gris);
+  padding: 0.35rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.enlace-menu:hover {
+  color: var(--color-amarillo);
+  border-color: var(--color-amarillo);
+  background-color: rgba(240, 224, 64, 0.05);
+}
+
+/* El enlace de la página activa se ve amarillo */
+.enlace-menu-activo {
+  color: var(--color-amarillo);
+  border-color: var(--color-amarillo);
+  background-color: rgba(240, 224, 64, 0.05);
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   PIE DE PÁGINA
+───────────────────────────────────────────────────────────── */
+
+.pie-sitio {
+  border-top: 1px solid var(--color-borde);
+  padding: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.texto-pie {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--color-gris);
+  margin-bottom: 0.4rem;
+}
+
+.enlace-pie {
+  color: var(--color-verde-agua);
+  text-decoration: none;
+}
+
+.enlace-pie:hover {
+  text-decoration: underline;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   PÁGINA DE INICIO (index.html)
+───────────────────────────────────────────────────────────── */
+
+.seccion-inicio {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 2rem 3rem;
+}
+
+.etiqueta-bienvenida {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-verde-agua);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.titulo-inicio {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+.titulo-inicio-cursiva {
+  font-style: italic;
+  color: var(--color-amarillo);
+}
+
+.parrafo-inicio {
+  font-size: 1.1rem;
+  color: var(--color-gris);
+  max-width: 540px;
+  margin-bottom: 3rem;
+}
+
+/* Rejilla de 3 columnas para las tarjetas */
+.rejilla-categorias {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-categoria-inicio {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-decoration: none;
+  display: block;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.tarjeta-categoria-inicio:hover {
+  border-color: var(--color-amarillo);
+  transform: translateY(-2px);
+}
+
+.numero-tarjeta {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--color-verde-agua);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.icono-tarjeta {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.nombre-tarjeta {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--color-amarillo);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.descripcion-tarjeta {
+  font-size: 0.85rem;
+  color: var(--color-gris);
+  line-height: 1.5;
+}
+
+.lista-etiquetas-tarjeta {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* Cada chipito de código dentro de la tarjeta */
+.chip-etiqueta {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  color: var(--color-verde-agua);
+  background-color: rgba(64, 224, 208, 0.08);
+  border: 1px solid rgba(64, 224, 208, 0.2);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   PÁGINAS DE CATEGORÍA
+───────────────────────────────────────────────────────────── */
+
+.pagina-categoria {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+/* Migas de pan (Inicio > Categoría) */
+.ruta-navegacion {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 0 2rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+}
+
+.enlace-ruta {
+  color: var(--color-verde-agua);
+  text-decoration: none;
+}
+
+.enlace-ruta:hover {
+  text-decoration: underline;
+}
+
+.separador-ruta {
+  color: var(--color-borde);
+}
+
+.pagina-actual-ruta {
+  color: var(--color-gris);
+}
+
+/* Encabezado de la página de categoría */
+.encabezado-pagina {
+  margin-bottom: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.numero-pagina {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--color-verde-agua);
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.titulo-pagina {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.subtitulo-pagina {
+  font-size: 1rem;
+  color: var(--color-gris);
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   BLOQUE DE CADA ETIQUETA HTML
+───────────────────────────────────────────────────────────── */
+
+.bloque-etiqueta {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.bloque-etiqueta:hover {
+  border-color: var(--color-amarillo);
+}
+
+/* Cabecera del bloque */
+.cabecera-bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-superficie);
+  border-bottom: 1px solid var(--color-borde);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.nombre-etiqueta-titulo {
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  color: var(--color-amarillo);
+}
+
+/* Insignia de categoría */
+.insignia-categoria {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  border: 1px solid;
+}
+
+.insignia-estructura  { color: var(--color-morado);    border-color: rgba(167,139,250,0.3); background-color: rgba(167,139,250,0.08); }
+.insignia-texto       { color: var(--color-verde-agua); border-color: rgba(64,224,208,0.3);  background-color: rgba(64,224,208,0.08);  }
+.insignia-lista       { color: var(--color-naranja);    border-color: rgba(251,146,60,0.3);  background-color: rgba(251,146,60,0.08);  }
+.insignia-formulario  { color: var(--color-verde);      border-color: rgba(52,211,153,0.3);  background-color: rgba(52,211,153,0.08);  }
+.insignia-tabla       { color: var(--color-rosa);       border-color: rgba(244,114,182,0.3); background-color: rgba(244,114,182,0.08); }
+.insignia-multimedia  { color: var(--color-rojo);       border-color: rgba(255,107,107,0.3); background-color: rgba(255,107,107,0.08); }
+
+/* Interior del bloque */
+.interior-bloque {
+  padding: 1.5rem;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   APARTADOS (Definición, Sintaxis, Ejemplo, Uso, Consejo)
+───────────────────────────────────────────────────────────── */
+
+.apartado {
+  margin-bottom: 1.25rem;
+}
+
+.titulo-apartado {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-gris);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.parrafo-apartado {
+  font-size: 0.97rem;
+  color: var(--color-texto);
+  line-height: 1.7;
+}
+
+.parrafo-apartado code {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--color-verde-agua);
+  background-color: rgba(64,224,208,0.08);
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   BLOQUES DE CÓDIGO
+───────────────────────────────────────────────────────────── */
+
+.bloque-codigo {
+  background-color: var(--color-codigo);
+  border: 1px solid var(--color-borde);
+  border-radius: 3px;
+  padding: 1rem 1.25rem;
+  overflow-x: auto;
+  margin-top: 0.5rem;
+}
+
+.bloque-codigo code {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.82rem;
+  color: #c9d1d9;
+}
+
+.codigo-etiqueta   { color: var(--color-amarillo); }
+.codigo-atributo   { color: #79c0ff; }
+.codigo-valor      { color: #a5d6ff; }
+.codigo-comentario { color: #586069; font-style: italic; }
+
+
+/* ─────────────────────────────────────────────────────────────
+   CAJA DE DEMOSTRACIÓN
+───────────────────────────────────────────────────────────── */
+
+.caja-demostracion {
+  background-color: var(--color-fondo);
+  border: 1px dashed var(--color-borde);
+  border-radius: 3px;
+  padding: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.nota-demostracion {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--color-gris);
+  margin-top: 0.6rem;
+  display: block;
+}
+
+
+/* ─────────────────────────────────────────────────────────────
+   ESTILOS PARA ELEMENTOS DENTRO DE LAS DEMOS
+───────────────────────────────────────────────────────────── */
+
+/* -- Demo de <header> -- */
+.estilo-ejemplo-practico-header {
+  background-color: var(--color-tarjeta);
+  padding: 1rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.estilo-logo-demo {
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  color: var(--color-amarillo);
+  font-weight: 700;
+}
+
+.estilo-menu-demo {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--color-gris);
+}
+
+/* -- Demo de <nav> -- */
+.estilo-lista-nav-demo {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.estilo-enlace-nav-demo {
+  color: var(--color-verde-agua);
+  text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+}
+
+/* -- Demo de encabezados h1-h6 -- */
+.estilo-encabezado-h1 { font-family:'Fraunces',serif; font-size:2rem;   color:var(--color-texto); margin-bottom:0.25rem; }
+.estilo-encabezado-h2 { font-family:'Fraunces',serif; font-size:1.6rem; color:var(--color-texto); margin-bottom:0.25rem; }
+.estilo-encabezado-h3 { font-family:'Fraunces',serif; font-size:1.3rem; color:var(--color-texto); margin-bottom:0.25rem; }
+.estilo-encabezado-h4 { font-family:'Fraunces',serif; font-size:1.1rem; color:var(--color-texto); margin-bottom:0.25rem; }
+.estilo-encabezado-h5 { font-family:'Fraunces',serif; font-size:0.95rem; color:var(--color-texto); margin-bottom:0.25rem; }
+.estilo-encabezado-h6 { font-family:'Fraunces',serif; font-size:0.85rem; color:var(--color-gris);  margin-bottom:0.25rem; }
+
+/* -- Demo de párrafos -- */
+.estilo-parrafo-demo      { color:var(--color-texto); font-size:0.97rem; margin-bottom:0.5rem; }
+.estilo-span-color-demo   { color:var(--color-amarillo); }
+.estilo-hr-demo           { border:none; border-top:1px solid var(--color-borde); margin:0.75rem 0; }
+.estilo-texto-gris-demo   { font-size:0.85rem; color:var(--color-gris); }
+
+/* -- Demo de listas -- */
+.estilo-demo-dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.estilo-etiqueta-tipo-lista {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--color-gris);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.estilo-lista-desordenada { padding-left:1.5rem; color:var(--color-texto); }
+.estilo-lista-ordenada    { padding-left:1.5rem; color:var(--color-texto); }
+.estilo-item-lista        { margin-bottom:0.25rem; }
+
+/* -- Demo de lista de definiciones -- */
+.estilo-lista-definicion {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1.25rem;
+}
+
+.estilo-termino-definicion    { font-family:'Space Mono',monospace; font-size:0.85rem; color:var(--color-verde-agua); font-weight:700; }
+.estilo-descripcion-definicion { color:var(--color-texto); font-size:0.9rem; }
+
+/* -- Demo de tabla -- */
+.estilo-tabla-demo {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+}
+
+.estilo-celda-encabezado-tabla { background-color:var(--color-superficie); color:var(--color-amarillo); padding:0.5rem 0.75rem; text-align:left; border:1px solid var(--color-borde); }
+.estilo-celda-dato-tabla       { padding:0.5rem 0.75rem; border:1px solid var(--color-borde); color:var(--color-texto); }
+.estilo-fila-par-tabla         { background-color:rgba(255,255,255,0.02); }
+
+/* -- Demo de formulario -- */
+.estilo-formulario-demo  { display:flex; flex-direction:column; gap:0.75rem; }
+.estilo-fieldset-demo    { border:1px solid var(--color-borde); padding:1rem; border-radius:3px; }
+.estilo-fieldset-margen-demo { border:1px solid var(--color-borde); padding:1rem; border-radius:3px; margin-top:0.75rem; }
+.estilo-legend-demo      { font-family:'Space Mono',monospace; font-size:0.8rem; color:var(--color-verde-agua); padding:0 0.5rem; }
+.estilo-label-demo       { font-family:'Space Mono',monospace; font-size:0.8rem; color:var(--color-gris); display:block; margin-bottom:0.25rem; }
+.estilo-label-checkbox-demo { display:flex; align-items:center; gap:0.5rem; font-family:'Space Mono',monospace; font-size:0.8rem; color:var(--color-gris); margin-bottom:0.5rem; }
+.estilo-checkbox-demo    { width:auto; margin:0; }
+
+.estilo-input-demo {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 2px;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-texto);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.estilo-input-demo:focus { outline:1px solid var(--color-amarillo); border-color:var(--color-amarillo); }
+
+.estilo-textarea-demo {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 2px;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-texto);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  width: 100%;
+  display: block;
+  resize: vertical;
+}
+
+.estilo-textarea-demo:focus { outline:1px solid var(--color-amarillo); border-color:var(--color-amarillo); }
+
+.estilo-select-demo {
+  background-color: var(--color-superficie);
+  border: 1px solid var(--color-borde);
+  border-radius: 2px;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-texto);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.estilo-boton-demo {
+  background-color: var(--color-amarillo);
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.estilo-boton-demo:hover { background-color:var(--color-verde-agua); }
+
+/* -- Demo de multimedia -- */
+.estilo-imagen-demo  { width:100%; border-radius:3px; display:block; }
+.estilo-audio-demo   { width:100%; border-radius:3px; }
+.estilo-video-demo   { width:100%; border-radius:3px; display:block; }
+.estilo-iframe-demo  { width:100%; border-radius:3px; border:1px solid var(--color-borde); display:block; }
+
+
+/* ─────────────────────────────────────────────────────────────
+   CAJA DE BUENAS PRÁCTICAS
+───────────────────────────────────────────────────────────── */
+
+.caja-buenas-practicas {
+  border-left: 3px solid var(--color-amarillo);
+  padding: 0.75rem 1rem;
+  background-color: rgba(240,224,64,0.04);
+  margin-top: 1rem;
+  border-radius: 0 3px 3px 0;
+}
+
+.titulo-buenas-practicas {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--color-amarillo);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.texto-buenas-practicas {
+  font-size: 0.9rem;
+  color: var(--color-gris);
+  line-height: 1.6;
+}
+
+.texto-buenas-practicas code {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.82rem;
+  color: var(--color-verde-agua);
+}
+
+
+/* RESPONSIVE — pantallas pequeñas
+ */
+@media (max-width: 600px) {
+  .lista-menu               { display: none; }
+  .titulo-inicio            { font-size: 2.2rem; }
+  .rejilla-categorias       { grid-template-columns: 1fr; }
+  .estilo-demo-dos-columnas { grid-template-columns: 1fr; }
+}
+
+
+/*  ESTILOS PARA LAS FUNCIONES DE JAVASCRIPT */
+
+/* ── Botón flotante "Volver arriba" ── */
+
+/* El botón está oculto por defecto (fuera de la pantalla hacia abajo) */
+.boton-arriba {
+  position: fixed;        /* fijo en pantalla, no se mueve al hacer scroll */
+  bottom: 2rem;           /* a 2rem del borde inferior de la pantalla      */
+  right: 2rem;            /* a 2rem del borde derecho                      */
+  background: var(--color-amarillo);
+  color: #000;
+  font-family: 'Space Mono', monospace;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50%;     /* completamente redondo                         */
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  z-index: 200;           /* por encima de todo                            */
+  opacity: 0;             /* invisible por defecto                         */
+  transform: translateY(20px); /* desplazado hacia abajo                  */
+  transition: opacity 0.3s, transform 0.3s; /* animación al aparecer      */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Clase que JS añade cuando el usuario baja más de 300px */
+.boton-arriba-visible {
+  opacity: 1;             /* visible                                       */
+  transform: translateY(0); /* en su posición normal                       */
+}
+
+.boton-arriba:hover {
+  background: var(--color-verde-agua);
+}
+
+
+/* ── Mensajes de error del formulario ── */
+
+/* Por defecto ocultos — JS los muestra cuando hay error */
+.mensaje-error {
+  display: none;          /* oculto hasta que JS lo active                */
+  color: var(--color-rojo);
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  background: rgba(255, 107, 107, 0.08);
+  border-left: 2px solid var(--color-rojo);
+  border-radius: 0 2px 2px 0;
+}
+
+
+/* ── Mensaje de éxito del formulario ── */
+
+/* También oculto por defecto */
+.mensaje-exito {
+  display: none;          /* JS lo muestra al enviar correctamente         */
+  background: rgba(52, 211, 153, 0.1);
+  border: 1px solid #34d399;
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  color: #34d399;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+
+/* ── Contador de caracteres del textarea ── */
+
+.contador-caracteres {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--color-gris);
+  text-align: right;
+  margin-top: 0.25rem;
+  display: block;
+  transition: color 0.2s;
+}
+
+/* Clase que JS añade cuando quedan menos de 50 caracteres */
+.contador-advertencia {
+  color: var(--color-amarillo); /* cambia a amarillo de advertencia */
+}
+
+
+/* ── Bloque de código copiado ── */
+
+/* Clase que JS añade temporalmente al hacer clic en un bloque de código */
+.bloque-codigo-copiado {
+  border-color: var(--color-verde-agua); /* el borde se vuelve verde-agua */
+  box-shadow: 0 0 0 1px var(--color-verde-agua); /* brillo alrededor      */
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog HTML — Inicio</title>
+  <!-- Enlazamos el archivo de estilos compartido -->
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<!-- ── CABECERA CON MENÚ ── -->
+<header class="cabecera-sitio">
+  <a href="index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
+  <nav class="menu-sitio">
+    <ul class="lista-menu">
+      <li><a href="estructurales.html" class="enlace-menu">Estructurales</a></li>
+      <li><a href="texto.html"         class="enlace-menu">Texto</a></li>
+      <li><a href="listas.html"        class="enlace-menu">Listas</a></li>
+      <li><a href="formularios.html"   class="enlace-menu">Formularios</a></li>
+      <li><a href="tablas.html"        class="enlace-menu">Tablas</a></li>
+      <li><a href="multimedia.html"    class="enlace-menu">Multimedia</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ── BLOQUE DE BIENVENIDA ── -->
+  <section class="seccion-inicio">
+    <span class="etiqueta-bienvenida">Blog Educativo · Etiquetas HTML</span>
+    <h1 class="titulo-inicio">
+      Aprende HTML<br>
+      <em class="titulo-inicio-cursiva">por categorías</em>
+    </h1>
+    <p class="parrafo-inicio">
+      Más de 20 etiquetas explicadas con definición, sintaxis, ejemplos prácticos
+      y buenas prácticas. Elige una categoría para comenzar.
+    </p>
+  </section>
+
+  <!-- ── REJILLA DE CATEGORÍAS ── -->
+  <div class="rejilla-categorias">
+
+    <!-- Tarjeta 1: Estructurales -->
+    <a href="estructurales.html" class="tarjeta-categoria-inicio">
+      <span class="numero-tarjeta">01 / 06</span>
+      <span class="icono-tarjeta">📐</span>
+      <span class="nombre-tarjeta">Etiquetas Estructurales</span>
+      <p class="descripcion-tarjeta">
+        Las etiquetas que dan la estructura base a una página web y le dan sentido semántico al contenido.
+      </p>
+      <div class="lista-etiquetas-tarjeta">
+        <span class="chip-etiqueta">&lt;header&gt;</span>
+        <span class="chip-etiqueta">&lt;nav&gt;</span>
+        <span class="chip-etiqueta">&lt;main&gt;</span>
+        <span class="chip-etiqueta">&lt;section&gt;</span>
+        <span class="chip-etiqueta">&lt;article&gt;</span>
+        <span class="chip-etiqueta">&lt;footer&gt;</span>
+      </div>
+    </a>
+
+    <!-- Tarjeta 2: Texto -->
+    <a href="texto.html" class="tarjeta-categoria-inicio">
+      <span class="numero-tarjeta">02 / 06</span>
+      <span class="icono-tarjeta">✏️</span>
+      <span class="nombre-tarjeta">Texto y Contenido</span>
+      <p class="descripcion-tarjeta">
+        Etiquetas para organizar y dar formato al texto de la página: títulos, párrafos y énfasis.
+      </p>
+      <div class="lista-etiquetas-tarjeta">
+        <span class="chip-etiqueta">&lt;h1&gt;–&lt;h6&gt;</span>
+        <span class="chip-etiqueta">&lt;p&gt;</span>
+        <span class="chip-etiqueta">&lt;strong&gt;</span>
+        <span class="chip-etiqueta">&lt;em&gt;</span>
+        <span class="chip-etiqueta">&lt;span&gt;</span>
+        <span class="chip-etiqueta">&lt;br&gt;</span>
+      </div>
+    </a>
+
+    <!-- Tarjeta 3: Listas -->
+    <a href="listas.html" class="tarjeta-categoria-inicio">
+      <span class="numero-tarjeta">03 / 06</span>
+      <span class="icono-tarjeta">📋</span>
+      <span class="nombre-tarjeta">Listas</span>
+      <p class="descripcion-tarjeta">
+        Etiquetas para crear listas ordenadas, desordenadas y de definición para organizar información.
+      </p>
+      <div class="lista-etiquetas-tarjeta">
+        <span class="chip-etiqueta">&lt;ul&gt;</span>
+        <span class="chip-etiqueta">&lt;ol&gt;</span>
+        <span class="chip-etiqueta">&lt;li&gt;</span>
+        <span class="chip-etiqueta">&lt;dl&gt;</span>
+        <span class="chip-etiqueta">&lt;dt&gt;</span>
+        <span class="chip-etiqueta">&lt;dd&gt;</span>
+      </div>
+    </a>
+
+    <!-- Tarjeta 4: Formularios -->
+    <a href="formularios.html" class="tarjeta-categoria-inicio">
+      <span class="numero-tarjeta">04 / 06</span>
+      <span class="icono-tarjeta">📝</span>
+      <span class="nombre-tarjeta">Formularios</span>
+      <p class="descripcion-tarjeta">
+        Etiquetas para crear formularios interactivos donde el usuario puede ingresar y enviar datos.
+      </p>
+      <div class="lista-etiquetas-tarjeta">
+        <span class="chip-etiqueta">&lt;form&gt;</span>
+        <span class="chip-etiqueta">&lt;input&gt;</span>
+        <span class="chip-etiqueta">&lt;label&gt;</span>
+        <span class="chip-etiqueta">&lt;select&gt;</span>
+        <span class="chip-etiqueta">&lt;button&gt;</span>
+        <span class="chip-etiqueta">&lt;textarea&gt;</span>
+      </div>
+    </a>
+
+    <!-- Tarjeta 5: Tablas -->
+    <a href="tablas.html" class="tarjeta-categoria-inicio">
+      <span class="numero-tarjeta">05 / 06</span>
+      <span class="icono-tarjeta">🗂️</span>
+      <span class="nombre-tarjeta">Tablas</span>
+      <p class="descripcion-tarjeta">
+        Etiquetas para mostrar datos en forma de filas y columnas, como una hoja de cálculo.
+      </p>
+      <div class="lista-etiquetas-tarjeta">
+        <span class="chip-etiqueta">&lt;table&gt;</span>
+        <span class="chip-etiqueta">&lt;thead&gt;</span>
+        <span class="chip-etiqueta">&lt;tbody&gt;</span>
+        <span class="chip-etiqueta">&lt;tr&gt;</span>
+        <span class="chip-etiqueta">&lt;th&gt;</span>
+        <span class="chip-etiqueta">&lt;td&gt;</span>
+      </div>
+    </a>
+
+    <!-- Tarjeta 6: Multimedia -->
+    <a href="multimedia.html" class="tarjeta-categoria-inicio">
+      <span class="numero-tarjeta">06 / 06</span>
+      <span class="icono-tarjeta">🎬</span>
+      <span class="nombre-tarjeta">Multimedia</span>
+      <p class="descripcion-tarjeta">
+        Etiquetas para insertar imágenes, audio, video y contenido externo en la página web.
+      </p>
+      <div class="lista-etiquetas-tarjeta">
+        <span class="chip-etiqueta">&lt;img&gt;</span>
+        <span class="chip-etiqueta">&lt;audio&gt;</span>
+        <span class="chip-etiqueta">&lt;video&gt;</span>
+        <span class="chip-etiqueta">&lt;source&gt;</span>
+        <span class="chip-etiqueta">&lt;iframe&gt;</span>
+      </div>
+    </a>
+
+  </div><!-- fin rejilla -->
+
+</main>
+
+<!-- ── PIE DE PÁGINA ── -->
+<footer class="pie-sitio">
+  <p class="texto-pie">Blog Educativo · Etiquetas HTML · &copy; 2025</p>
+  <p class="texto-pie">
+    Referencias:
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="enlace-pie" target="_blank" rel="noopener">MDN Web Docs</a> ·
+    <a href="https://www.w3schools.com/html/" class="enlace-pie" target="_blank" rel="noopener">W3Schools</a>
+  </p>
+</footer>
+
+  <!-- Botón flotante para volver al inicio de la página -->
+  <!-- JS lo muestra/oculta según el scroll con la clase "boton-arriba-visible" -->
+  <button class="boton-arriba" id="boton-arriba" title="Volver arriba">↑</button>
+
+  <!-- Cargamos el archivo JavaScript del blog -->
+  <!-- defer = espera a que el HTML cargue antes de ejecutar el script -->
+  <script src="funciones.js" defer></script>
+</body>
+</html>
