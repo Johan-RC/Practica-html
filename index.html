@@ -1,16 +1,31 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos.css">
-    <title>Practicas-HTML</title>
+<!DOCTYPE html> <!-- declara que el documento es HTML5 -->
+<html lang="es"> <!-- elemento raíz con atributo de idioma español -->
+<head> <!-- contenedor de metadatos y enlaces a recursos -->
+    <meta charset="UTF-8"> <!-- codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive: escala según ancho de dispositivo -->
+    <link rel="stylesheet" href="/Estilos/inicio.css"> <!-- enlace al archivo CSS local -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"> <!-- CDN de Bootstrap (opcional) -->
+    <title>Practicas-HTML</title> <!-- título que aparece en la pestaña del navegador -->
 </head>
-<body>
-    <div> 
-        <h1>Practicas de Fron-end</h1>
-        
-    </div>
+<body> <!-- cuerpo del documento, visible en la página -->
+    <header class="site-header"> <!-- encabezado semántico de la página -->
+        <div class="header-top"> <!-- contenedor que agrupa logo y navegación -->
+            <div class="logo"> <!-- bloque del logo/identidad -->
+                <span class="tag">&lt;html&gt;</span> <!-- etiqueta estilo código (ej: <html>) -->
+                <span class="brand">blog</span> <!-- nombre de la marca/ sitio -->
+            </div>
+            <nav class="nav"> <!-- elemento nav que contiene la navegación principal -->
+                <ul class="nav-list"> <!-- lista sin estilo que contiene los enlaces -->
+                    <li><a href="#">Estructurales</a></li> <!-- enlace a sección Estructurales -->
+                    <li><a href="#">Texto</a></li> <!-- enlace a sección Texto -->
+                    <li><a href="#">Listas</a></li> <!-- enlace a sección Listas -->
+                    <li><a href="#">Formularios</a></li> <!-- enlace a sección Formularios -->
+                    <li><a href="#">Tablas</a></li> <!-- enlace a sección Tablas -->
+                    <li><a href="#">Multimedia</a></li> <!-- enlace a sección Multimedia -->
+                </ul>
+            </nav>
+        </div>
+    </header>
 </body>
-<script src="/funtion.js"></script>
-</html>
+<script src="/Funciones/Alertas.js"></script> <!-- enlace a script JS local (asegúrate que la ruta sea correcta) -->
+</html> <!-- cierra el documento HTML -->
