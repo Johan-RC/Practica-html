@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog HTML — Texto y Contenido</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<header class="cabecera-sitio">
+  <a href="index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
+  <nav class="menu-sitio">
+    <ul class="lista-menu">
+      <li><a href="estructurales.html" class="enlace-menu">Estructurales</a></li>
+      <li><a href="texto.html"         class="enlace-menu">Texto</a></li>
+      <li><a href="listas.html"        class="enlace-menu">Listas</a></li>
+      <li><a href="formularios.html"   class="enlace-menu">Formularios</a></li>
+      <li><a href="tablas.html"        class="enlace-menu">Tablas</a></li>
+      <li><a href="multimedia.html"    class="enlace-menu">Multimedia</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-categoria">
+
+  <nav class="ruta-navegacion">
+    <a href="index.html" class="enlace-ruta">Inicio</a>
+    <span class="separador-ruta">/</span>
+    <span class="pagina-actual-ruta">Texto y Contenido</span>
+  </nav>
+
+  <div class="encabezado-pagina">
+    <span class="numero-pagina">02 / 06</span>
+    <h1 class="titulo-pagina">Texto y Contenido</h1>
+    <p class="subtitulo-pagina">
+      Etiquetas para organizar, jerarquizar y dar formato al texto. Desde los
+      títulos más importantes hasta el énfasis en una sola palabra.
+    </p>
+  </div>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: h1 a h6
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;h1&gt; — &lt;h6&gt;</span>
+      <span class="insignia-categoria insignia-texto">Texto</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Los encabezados crean jerarquía en el contenido. <code>&lt;h1&gt;</code> es el más importante
+          (solo uno por página). <code>&lt;h6&gt;</code> es el de menor importancia.
+          Son fundamentales para el SEO y la accesibilidad.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;h1&gt;</span>Título principal (uno solo por página)<span class="codigo-etiqueta">&lt;/h1&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;h2&gt;</span>Sección<span class="codigo-etiqueta">&lt;/h2&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;h3&gt;</span>Subsección<span class="codigo-etiqueta">&lt;/h3&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;h4&gt;</span>Detalle<span class="codigo-etiqueta">&lt;/h4&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;h5&gt;</span>Menor detalle<span class="codigo-etiqueta">&lt;/h5&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;h6&gt;</span>Nivel mínimo<span class="codigo-etiqueta">&lt;/h6&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <p class="estilo-encabezado-h1">Encabezado h1</p>
+          <p class="estilo-encabezado-h2">Encabezado h2</p>
+          <p class="estilo-encabezado-h3">Encabezado h3</p>
+          <p class="estilo-encabezado-h4">Encabezado h4</p>
+          <p class="estilo-encabezado-h5">Encabezado h5</p>
+          <p class="estilo-encabezado-h6">Encabezado h6</p>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Uso adecuado</span>
+        <p class="parrafo-apartado">
+          Úsalos para organizar el contenido en niveles. <code>&lt;h1&gt;</code> para el título de la página,
+          <code>&lt;h2&gt;</code> para las secciones, <code>&lt;h3&gt;</code> para subsecciones, y así sucesivamente.
+        </p>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          No saltes niveles (por ejemplo de h1 directo a h4). Usa los encabezados para estructurar
+          el contenido, no para cambiar el tamaño del texto visualmente (para eso usa CSS).
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <p>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;p&gt;</span>
+      <span class="insignia-categoria insignia-texto">Texto</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Define un párrafo de texto. Es uno de los elementos más usados en HTML.
+          El navegador añade automáticamente un espacio antes y después del párrafo.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;p&gt;</span>Este es el primer párrafo.<span class="codigo-etiqueta">&lt;/p&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;p&gt;</span>Este es el segundo párrafo.<span class="codigo-etiqueta">&lt;/p&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <p class="estilo-parrafo-demo">
+            Este es el primer párrafo. Tiene algo de texto para ver cómo se ve en la página.
+          </p>
+          <p class="estilo-parrafo-demo">
+            Este es el segundo párrafo. El navegador añade automáticamente un espacio entre ellos.
+          </p>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          No uses <code>&lt;br&gt;</code> entre dos párrafos para crear espacio. En su lugar, usa
+          la propiedad <code>margin</code> de CSS. Cada bloque de texto independiente debe ir en su propio <code>&lt;p&gt;</code>.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: strong, em, span
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;strong&gt; &lt;em&gt; &lt;span&gt;</span>
+      <span class="insignia-categoria insignia-texto">Texto</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          <code>&lt;strong&gt;</code> — Texto de gran importancia semántica. Se muestra en negrita.<br>
+          <code>&lt;em&gt;</code> — Texto con énfasis. Se muestra en cursiva.<br>
+          <code>&lt;span&gt;</code> — Contenedor en línea sin significado semántico propio.
+          Se usa para aplicar estilos CSS a partes del texto sin crear salto de línea.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;p&gt;</span><br>
+            &nbsp;&nbsp;Texto con <span class="codigo-etiqueta">&lt;strong&gt;</span>mucha importancia<span class="codigo-etiqueta">&lt;/strong&gt;</span><br>
+            &nbsp;&nbsp;y con <span class="codigo-etiqueta">&lt;em&gt;</span>énfasis<span class="codigo-etiqueta">&lt;/em&gt;</span>.<br>
+            &nbsp;&nbsp;Y con <span class="codigo-etiqueta">&lt;span</span> <span class="codigo-atributo">class</span>=<span class="codigo-valor">"color-especial"</span><span class="codigo-etiqueta">&gt;</span>color<span class="codigo-etiqueta">&lt;/span&gt;</span>.<br>
+            <span class="codigo-etiqueta">&lt;/p&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <p class="estilo-parrafo-demo">
+            Este párrafo tiene texto <strong>muy importante (strong)</strong>
+            y texto <em>enfatizado (em)</em>.
+            También puedo usar <span class="estilo-span-color-demo">span para colorear</span> partes específicas.
+          </p>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Usa <code>&lt;strong&gt;</code> cuando el texto sea semánticamente importante (advertencias, datos clave),
+          no solo para ponerlo en negrita visualmente. Para eso usa CSS con <code>font-weight: bold</code>.
+          <code>&lt;span&gt;</code> es útil cuando necesitas aplicar una clase a una parte del texto sin añadir
+          ningún significado extra.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: br y hr
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;br&gt; &lt;hr&gt;</span>
+      <span class="insignia-categoria insignia-texto">Texto</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          <code>&lt;br&gt;</code> — Inserta un salto de línea dentro de un párrafo sin crear un nuevo párrafo.
+          Es una etiqueta vacía (no tiene cierre).<br>
+          <code>&lt;hr&gt;</code> — Dibuja una línea horizontal que separa temáticamente dos partes del contenido.
+          También es etiqueta vacía.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;p&gt;</span>Primera línea.<span class="codigo-etiqueta">&lt;br&gt;</span>Segunda línea en el mismo párrafo.<span class="codigo-etiqueta">&lt;/p&gt;</span><br>
+            <br>
+            <span class="codigo-etiqueta">&lt;hr&gt;</span> <span class="codigo-comentario">&lt;!-- línea divisoria --&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <p class="estilo-parrafo-demo">
+            Primera línea del párrafo.<br>
+            Segunda línea (usando &lt;br&gt;) en el mismo párrafo.
+          </p>
+          <hr class="estilo-hr-demo">
+          <p class="estilo-texto-gris-demo">Este texto está separado por &lt;hr&gt;</p>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Evita usar <code>&lt;br&gt;</code> para crear espacios entre párrafos, para eso usa <code>margin</code> con CSS.
+          <code>&lt;br&gt;</code> tiene sentido en poemas, direcciones postales o cualquier texto donde el
+          salto de línea forma parte del contenido mismo.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <nav class="ruta-navegacion">
+    <a href="estructurales.html" class="enlace-ruta">← Anterior: Estructurales</a>
+    <span class="separador-ruta">·</span>
+    <a href="listas.html" class="enlace-ruta">Siguiente: Listas →</a>
+  </nav>
+
+</main>
+
+<footer class="pie-sitio">
+  <p class="texto-pie">Blog Educativo · Etiquetas HTML · &copy; 2025</p>
+  <p class="texto-pie">
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="enlace-pie" target="_blank" rel="noopener">MDN Web Docs</a> ·
+    <a href="https://www.w3schools.com/html/" class="enlace-pie" target="_blank" rel="noopener">W3Schools</a>
+  </p>
+</footer>
+
+  <!-- Botón flotante para volver al inicio de la página -->
+  <!-- JS lo muestra/oculta según el scroll con la clase "boton-arriba-visible" -->
+  <button class="boton-arriba" id="boton-arriba" title="Volver arriba">↑</button>
+
+  <!-- Cargamos el archivo JavaScript del blog -->
+  <!-- defer = espera a que el HTML cargue antes de ejecutar el script -->
+  <script src="funciones.js" defer></script>
+</body>
+</html>

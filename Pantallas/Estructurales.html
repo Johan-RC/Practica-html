@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog HTML — Etiquetas Estructurales</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+<!-- ── CABECERA CON MENÚ ── -->
+<header class="cabecera-sitio">
+  <a href="index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
+  <nav class="menu-sitio">
+    <ul class="lista-menu">
+      <!-- "enlace-menu-activo" marca la página actual -->
+      <li><a href="estructurales.html" class="enlace-menu">Estructurales</a></li>
+      <li><a href="texto.html"         class="enlace-menu">Texto</a></li>
+      <li><a href="listas.html"        class="enlace-menu">Listas</a></li>
+      <li><a href="formularios.html"   class="enlace-menu">Formularios</a></li>
+      <li><a href="tablas.html"        class="enlace-menu">Tablas</a></li>
+      <li><a href="multimedia.html"    class="enlace-menu">Multimedia</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-categoria">
+
+  <!-- Migas de pan: Inicio > Estructurales -->
+  <nav class="ruta-navegacion">
+    <a href="index.html" class="enlace-ruta">Inicio</a>
+    <span class="separador-ruta">/</span>
+    <span class="pagina-actual-ruta">Estructurales</span>
+  </nav>
+
+  <!-- Encabezado de la página -->
+  <div class="encabezado-pagina">
+    <span class="numero-pagina">01 / 06</span>
+    <h1 class="titulo-pagina">Etiquetas Estructurales</h1>
+    <p class="subtitulo-pagina">
+      Estas etiquetas definen la estructura y el esqueleto semántico de una página web.
+      Le dicen al navegador (y a los motores de búsqueda) qué función cumple cada parte.
+    </p>
+  </div>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <header>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;header&gt;</span>
+      <span class="insignia-categoria insignia-estructura">Estructura</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Define la cabecera de una página o sección. Suele contener el logo, el título del sitio
+          y la navegación principal.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;header&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;h1&gt;</span>Nombre del sitio<span class="codigo-etiqueta">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;nav&gt;</span>... menú ...<span class="codigo-etiqueta">&lt;/nav&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;/header&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <header class="estilo-ejemplo-practico-header">
+            <span class="estilo-logo-demo">MiSitio</span>
+            <span class="estilo-menu-demo">Inicio · Blog · Contacto</span>
+          </header>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Uso adecuado</span>
+        <p class="parrafo-apartado">
+          Va al inicio del <code>&lt;body&gt;</code> para la cabecera del sitio completo.
+          También puede usarse dentro de un <code>&lt;article&gt;</code> para su propia cabecera.
+        </p>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          No pongas un <code>&lt;header&gt;</code> dentro de otro <code>&lt;header&gt;</code>.
+          Úsalo solo para encabezados importantes, no como contenedor decorativo.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <nav>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;nav&gt;</span>
+      <span class="insignia-categoria insignia-estructura">Estructura</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Define un bloque de enlaces de navegación. Ayuda a los lectores de pantalla
+          y a los motores de búsqueda a identificar el menú del sitio.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;nav&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;ul&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;li&gt;&lt;a</span> <span class="codigo-atributo">href</span>=<span class="codigo-valor">"/"</span><span class="codigo-etiqueta">&gt;</span>Inicio<span class="codigo-etiqueta">&lt;/a&gt;&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;li&gt;&lt;a</span> <span class="codigo-atributo">href</span>=<span class="codigo-valor">"/blog"</span><span class="codigo-etiqueta">&gt;</span>Blog<span class="codigo-etiqueta">&lt;/a&gt;&lt;/li&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;/ul&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;/nav&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <nav>
+            <ul class="estilo-lista-nav-demo">
+              <li><a href="#" class="estilo-enlace-nav-demo">Inicio</a></li>
+              <li><a href="#" class="estilo-enlace-nav-demo">Blog</a></li>
+              <li><a href="#" class="estilo-enlace-nav-demo">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Usa <code>&lt;nav&gt;</code> solo para los menús principales. Si tienes varios <code>&lt;nav&gt;</code>
+          en la misma página, ponle a cada uno un atributo <code>aria-label</code> para diferenciarlos.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <main>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;main&gt;</span>
+      <span class="insignia-categoria insignia-estructura">Estructura</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Representa el contenido principal y único de la página.
+          Solo debe haber <strong>un</strong> <code>&lt;main&gt;</code> por documento HTML.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;main&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;h1&gt;</span>Contenido principal<span class="codigo-etiqueta">&lt;/h1&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;p&gt;</span>Texto de la página...<span class="codigo-etiqueta">&lt;/p&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;/main&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          No incluyas dentro de <code>&lt;main&gt;</code> el header, el nav ni el footer.
+          Esos van fuera. Mejora la accesibilidad porque los lectores de pantalla pueden saltar
+          directo al contenido.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: section, article, aside, footer
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;section&gt; &lt;article&gt; &lt;aside&gt; &lt;footer&gt;</span>
+      <span class="insignia-categoria insignia-estructura">Estructura</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          <code>&lt;section&gt;</code> — Agrupa contenido relacionado por tema. Siempre debe tener un encabezado propio.<br>
+          <code>&lt;article&gt;</code> — Contenido independiente que tiene sentido por sí solo (post, noticia, comentario).<br>
+          <code>&lt;aside&gt;</code> — Contenido secundario o relacionado (barra lateral, nota extra, publicidad).<br>
+          <code>&lt;footer&gt;</code> — Pie de página de la sección o del documento completo.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;section&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;h2&gt;</span>Últimas noticias<span class="codigo-etiqueta">&lt;/h2&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;article&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;h3&gt;</span>Título del artículo<span class="codigo-etiqueta">&lt;/h3&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;p&gt;</span>Texto...<span class="codigo-etiqueta">&lt;/p&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;/article&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;/section&gt;</span><br>
+            <br>
+            <span class="codigo-etiqueta">&lt;aside&gt;</span><span class="codigo-etiqueta">&lt;p&gt;</span>Nota relacionada<span class="codigo-etiqueta">&lt;/p&gt;</span><span class="codigo-etiqueta">&lt;/aside&gt;</span><br>
+            <br>
+            <span class="codigo-etiqueta">&lt;footer&gt;</span><span class="codigo-etiqueta">&lt;p&gt;</span>&amp;copy; 2025<span class="codigo-etiqueta">&lt;/p&gt;</span><span class="codigo-etiqueta">&lt;/footer&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Siempre prefiere estas etiquetas semánticas en lugar de <code>&lt;div&gt;</code> genéricos.
+          Un <code>&lt;article&gt;</code> debería poder copiarse a otra página y seguir teniendo sentido completo.
+          Usa <code>&lt;section&gt;</code> solo cuando el contenido tenga un encabezado propio.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ── Navegación entre páginas ── -->
+  <nav class="ruta-navegacion">
+    <a href="index.html" class="enlace-ruta">← Volver al inicio</a>
+    <span class="separador-ruta">·</span>
+    <a href="texto.html" class="enlace-ruta">Siguiente: Texto →</a>
+  </nav>
+
+</main>
+
+<footer class="pie-sitio">
+  <p class="texto-pie">Blog Educativo · Etiquetas HTML · &copy; 2025</p>
+  <p class="texto-pie">
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="enlace-pie" target="_blank" rel="noopener">MDN Web Docs</a> ·
+    <a href="https://www.w3schools.com/html/" class="enlace-pie" target="_blank" rel="noopener">W3Schools</a>
+  </p>
+</footer>
+
+  <!-- Botón flotante para volver al inicio de la página -->
+  <!-- JS lo muestra/oculta según el scroll con la clase "boton-arriba-visible" -->
+  <button class="boton-arriba" id="boton-arriba" title="Volver arriba">↑</button>
+
+  <!-- Cargamos el archivo JavaScript del blog -->
+  <!-- defer = espera a que el HTML cargue antes de ejecutar el script -->
+  <script src="funciones.js" defer></script>
+</body>
+</html>
