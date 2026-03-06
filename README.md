@@ -2,24 +2,26 @@
 
 # 📚 Blog Educativo de Etiquetas HTML
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=30&duration=3000&color=00BFFF&center=true&vCenter=true&width=600&lines=Proyecto+Blog+Educativo+HTML;Aprendiendo+Etiquetas+HTML;Estructura+Semantica+y+Buenas+Practicas" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&size=30&duration=3000&color=00BFFF&center=true&vCenter=true&width=650&lines=Blog+Educativo+de+Etiquetas+HTML;Aprende+HTML+de+forma+visual;Proyecto+Academico+de+Desarrollo+Web" />
 
 </div>
 
 ---
 
-## 🚀 Descripción
+## 🚀 Descripción del Proyecto
 
-Este proyecto consiste en un **blog educativo desarrollado en HTML y CSS** donde se explican diferentes **etiquetas HTML organizadas por categorías**.
+Este proyecto consiste en un **blog educativo interactivo** donde se explican diferentes **etiquetas HTML organizadas por categorías**.
 
-El objetivo es construir un recurso didáctico que facilite el aprendizaje de las etiquetas más utilizadas en el desarrollo web.
+El sitio fue desarrollado con **HTML, CSS y JavaScript**, permitiendo mostrar ejemplos prácticos, navegación entre secciones y pequeñas interacciones para mejorar la experiencia del usuario.
 
 ---
 
 ## 🧩 Categorías del Blog
 
-📦 **Estructurales**
-📝 **Texto**
+El contenido se organiza en las siguientes secciones:
+
+🧱 **Etiquetas estructurales**
+📝 **Etiquetas de texto**
 📋 **Listas**
 📊 **Tablas**
 🧾 **Formularios**
@@ -28,7 +30,7 @@ El objetivo es construir un recurso didáctico que facilite el aprendizaje de la
 Cada etiqueta incluye:
 
 ✔ Definición
-✔ Sintaxis
+✔ Sintaxis básica
 ✔ Ejemplo funcional
 ✔ Explicación de uso
 ✔ Buenas prácticas
@@ -39,31 +41,36 @@ Cada etiqueta incluye:
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=html,css,vscode,github" />
+<img src="https://skillicons.dev/icons?i=html,css,js,vscode,github" />
 
 </p>
 
+* **HTML5** → estructura del sitio
+* **CSS3** → diseño y estilos visuales
+* **JavaScript** → interacciones y comportamiento dinámico
+
 ---
 
-## 📊 Características del Proyecto
+## ⚡ Funcionalidades
 
-✨ Más de **20 etiquetas HTML explicadas**
 ✨ Navegación entre categorías
+✨ Más de **20 etiquetas HTML explicadas**
 ✨ Ejemplos prácticos funcionales
-✨ Formulario HTML funcional
+✨ **Formulario interactivo**
+✨ Interacciones con **JavaScript**
 ✨ Diseño básico con CSS
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 
 ```
 Practica-html
 │
 ├── index.html
-├── Estilos
-├── Funciones
-├── Pantallas
+├── Estilos/
+├── Funciones/
+├── Pantallas/
 └── README.md
 ```
 
@@ -73,12 +80,12 @@ Practica-html
 
 **Johan Steven Rodríguez Charry**
 
-Proyecto académico – Blog Educativo HTML
+Proyecto académico — Blog Educativo de HTML
 
 ---
 
 <div align="center">
 
-⭐ Si te gusta el proyecto puedes darle **Star** al repositorio ⭐
+⭐ Si te gusta el proyecto puedes darle **Star** ⭐
 
 </div>
