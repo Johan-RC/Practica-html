@@ -79,6 +79,7 @@ Practica-html
 ## 👨‍💻 Autor
 
 **Johan Steven Rodríguez Charry**
+**Jhon Camilo Suaza**
 
 Proyecto académico — Blog Educativo de HTML
 
