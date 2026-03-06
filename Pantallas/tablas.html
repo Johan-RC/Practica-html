@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog HTML — Tablas</title>
+  <link rel="stylesheet" href="/Estilos/style.css" />
+</head>
+<body>
+
+<header class="cabecera-sitio">
+  <a href="/index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
+  <nav class="menu-sitio">
+    <ul class="lista-menu">
+      <li><a href="/Pantallas/estructurales.html" class="enlace-menu">Estructurales</a></li>
+      <li><a href="/Pantallas/texto.html"         class="enlace-menu">Texto</a></li>
+      <li><a href="/Pantallas/listas.html"        class="enlace-menu">Listas</a></li>
+      <li><a href="/Pantallas/formularios.html"   class="enlace-menu">Formularios</a></li>
+      <li><a href="/Pantallas/tablas.html"        class="enlace-menu">Tablas</a></li>
+      <li><a href="/Pantallas/multimedia.html"    class="enlace-menu">Multimedia</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-categoria">
+
+  <nav class="ruta-navegacion">
+    <a href="/index.html" class="enlace-ruta">Inicio</a>
+    <span class="separador-ruta">/</span>
+    <span class="pagina-actual-ruta">Tablas</span>
+  </nav>
+
+  <div class="encabezado-pagina">
+    <span class="numero-pagina">05 / 06</span>
+    <h1 class="titulo-pagina">Tablas</h1>
+    <p class="subtitulo-pagina">
+      Etiquetas para mostrar información organizada en filas y columnas.
+      Ideal para datos comparativos, horarios, precios, resultados, etc.
+    </p>
+  </div>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <table>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;table&gt;</span>
+      <span class="insignia-categoria insignia-tabla">Tablas</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Es el contenedor principal que envuelve toda la tabla.
+          Dentro de él van el <code>&lt;thead&gt;</code> (cabecera) y el <code>&lt;tbody&gt;</code> (cuerpo con datos).
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;table&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-comentario">&lt;!-- cabecera con nombres de columnas --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;thead&gt;</span> ... <span class="codigo-etiqueta">&lt;/thead&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-comentario">&lt;!-- cuerpo con los datos --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;tbody&gt;</span> ... <span class="codigo-etiqueta">&lt;/tbody&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;/table&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Las tablas son solo para datos tabulares, nunca para organizar el diseño visual de la página.
+          Para maquetación usa CSS Flexbox o Grid.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: thead, tbody, tr, th, td
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;thead&gt; &lt;tbody&gt; &lt;tr&gt; &lt;th&gt; &lt;td&gt;</span>
+      <span class="insignia-categoria insignia-tabla">Tablas</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          <code>&lt;thead&gt;</code> — Agrupa las filas del encabezado de la tabla (nombres de columnas).<br>
+          <code>&lt;tbody&gt;</code> — Agrupa las filas del cuerpo de la tabla (los datos reales).<br>
+          <code>&lt;tr&gt;</code> — Una fila de la tabla (table row).<br>
+          <code>&lt;th&gt;</code> — Celda de encabezado. Por defecto se muestra en negrita y centrada.<br>
+          <code>&lt;td&gt;</code> — Celda de datos normal (table data).
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;table&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="codigo-comentario">&lt;!-- thead: fila con los nombres de las columnas --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;thead&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;tr&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;th&gt;</span>Etiqueta<span class="codigo-etiqueta">&lt;/th&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;th&gt;</span>Categoría<span class="codigo-etiqueta">&lt;/th&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;/tr&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;/thead&gt;</span><br>
+            <br>
+            &nbsp;&nbsp;<span class="codigo-comentario">&lt;!-- tbody: filas con los datos reales --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;tbody&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;tr&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;td&gt;</span>&amp;lt;header&amp;gt;<span class="codigo-etiqueta">&lt;/td&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;td&gt;</span>Estructura<span class="codigo-etiqueta">&lt;/td&gt;</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="codigo-etiqueta">&lt;/tr&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;/tbody&gt;</span><br>
+            <br>
+            <span class="codigo-etiqueta">&lt;/table&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <table class="estilo-tabla-demo">
+            <thead>
+              <tr>
+                <th class="estilo-celda-encabezado-tabla">Etiqueta</th>
+                <th class="estilo-celda-encabezado-tabla">Categoría</th>
+                <th class="estilo-celda-encabezado-tabla">¿Semántica?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="estilo-celda-dato-tabla">&lt;header&gt;</td>
+                <td class="estilo-celda-dato-tabla">Estructura</td>
+                <td class="estilo-celda-dato-tabla">✅ Sí</td>
+              </tr>
+              <tr class="estilo-fila-par-tabla">
+                <td class="estilo-celda-dato-tabla">&lt;p&gt;</td>
+                <td class="estilo-celda-dato-tabla">Texto</td>
+                <td class="estilo-celda-dato-tabla">✅ Sí</td>
+              </tr>
+              <tr>
+                <td class="estilo-celda-dato-tabla">&lt;ul&gt;</td>
+                <td class="estilo-celda-dato-tabla">Lista</td>
+                <td class="estilo-celda-dato-tabla">✅ Sí</td>
+              </tr>
+              <tr class="estilo-fila-par-tabla">
+                <td class="estilo-celda-dato-tabla">&lt;form&gt;</td>
+                <td class="estilo-celda-dato-tabla">Formulario</td>
+                <td class="estilo-celda-dato-tabla">✅ Sí</td>
+              </tr>
+              <tr>
+                <td class="estilo-celda-dato-tabla">&lt;img&gt;</td>
+                <td class="estilo-celda-dato-tabla">Multimedia</td>
+                <td class="estilo-celda-dato-tabla">✅ Sí</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <span class="nota-demostracion">↑ Tabla con thead, tbody, tr, th y td</span>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Uso adecuado</span>
+        <p class="parrafo-apartado">
+          Usa <code>&lt;th&gt;</code> para los encabezados de columna o fila. Puedes añadir el atributo
+          <code>scope="col"</code> para indicar que es encabezado de columna, o <code>scope="row"</code> para fila.
+          Esto mejora la accesibilidad con lectores de pantalla.
+        </p>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Añade un <code>&lt;caption&gt;</code> justo después de <code>&lt;table&gt;</code> para describir el propósito de la tabla.
+          Esto mejora la accesibilidad. No uses <code>colspan</code> ni <code>rowspan</code> de manera excesiva;
+          si la tabla se vuelve muy compleja, considera dividirla en varias tablas simples.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <nav class="ruta-navegacion">
+    <a href="/Pantallas/formularios.html" class="enlace-ruta">← Anterior: Formularios</a>
+    <span class="separador-ruta">·</span>
+    <a href="/Pantallas/multimedia.html" class="enlace-ruta">Siguiente: Multimedia →</a>
+  </nav>
+
+</main>
+
+<footer class="pie-sitio">
+  <p class="texto-pie">Blog Educativo · Etiquetas HTML · &copy; 2025</p>
+  <p class="texto-pie">
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="enlace-pie" target="_blank" rel="noopener">MDN Web Docs</a> ·
+    <a href="https://www.w3schools.com/html/" class="enlace-pie" target="_blank" rel="noopener">W3Schools</a>
+  </p>
+</footer>
+
+  <!-- Botón flotante para volver al inicio de la página -->
+  <!-- JS lo muestra/oculta según el scroll con la clase "boton-arriba-visible" -->
+  <button class="boton-arriba" id="boton-arriba" title="Volver arriba">↑</button>
+
+  <!-- Cargamos el archivo JavaScript del blog -->
+  <!-- defer = espera a que el HTML cargue antes de ejecutar el script -->
+  <script src="/Funciones/funtion.js" defer></script>
+</body>
+</html>

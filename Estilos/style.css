@@ -680,8 +680,9 @@ body {
 }
 
 
-/* RESPONSIVE — pantallas pequeñas
- */
+/* ─────────────────────────────────────────────────────────────
+   RESPONSIVE — pantallas pequeñas
+───────────────────────────────────────────────────────────── */
 @media (max-width: 600px) {
   .lista-menu               { display: none; }
   .titulo-inicio            { font-size: 2.2rem; }
@@ -690,7 +691,9 @@ body {
 }
 
 
-/*  ESTILOS PARA LAS FUNCIONES DE JAVASCRIPT */
+/* ----------------------------------------------------------------
+   ESTILOS PARA LAS FUNCIONES DE JAVASCRIPT
+---------------------------------------------------------------- */
 
 /* ── Botón flotante "Volver arriba" ── */
 

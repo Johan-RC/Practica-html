@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog HTML — Multimedia</title>
+  <link rel="stylesheet" href="/Estilos/style.css" />
+</head>
+<body>
+
+<header class="cabecera-sitio">
+  <a href="/index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
+  <nav class="menu-sitio">
+    <ul class="lista-menu">
+      <li><a href="/Pantallas/estructurales.html" class="enlace-menu">Estructurales</a></li>
+      <li><a href="/Pantallas/texto.html"         class="enlace-menu">Texto</a></li>
+      <li><a href="/Pantallas/listas.html"        class="enlace-menu">Listas</a></li>
+      <li><a href="/Pantallas/formularios.html"   class="enlace-menu">Formularios</a></li>
+      <li><a href="/Pantallas/tablas.html"        class="enlace-menu">Tablas</a></li>
+      <li><a href="/Pantallas/multimedia.html"    class="enlace-menu">Multimedia</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-categoria">
+
+  <nav class="ruta-navegacion">
+    <a href="/index.html" class="enlace-ruta">Inicio</a>
+    <span class="separador-ruta">/</span>
+    <span class="pagina-actual-ruta">Multimedia</span>
+  </nav>
+
+  <div class="encabezado-pagina">
+    <span class="numero-pagina">06 / 06</span>
+    <h1 class="titulo-pagina">Multimedia</h1>
+    <p class="subtitulo-pagina">
+      Etiquetas para insertar imágenes, audio, video y contenido externo
+      directamente en la página, sin necesidad de plugins.
+    </p>
+  </div>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <img>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;img&gt;</span>
+      <span class="insignia-categoria insignia-multimedia">Multimedia</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Inserta una imagen en la página. Es una etiqueta vacía, no tiene etiqueta de cierre.
+          El atributo <code>src</code> indica la ruta de la imagen y <code>alt</code> describe la imagen
+          en texto (obligatorio para accesibilidad).
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;img</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">src</span>=<span class="codigo-valor">"ruta/imagen.jpg"</span>    <span class="codigo-comentario">&lt;!-- dónde está la imagen --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">alt</span>=<span class="codigo-valor">"Descripción"</span>         <span class="codigo-comentario">&lt;!-- texto alternativo (obligatorio) --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">width</span>=<span class="codigo-valor">"400"</span>               <span class="codigo-comentario">&lt;!-- ancho en píxeles --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">height</span>=<span class="codigo-valor">"300"</span>              <span class="codigo-comentario">&lt;!-- alto en píxeles --&gt;</span><br>
+            <span class="codigo-etiqueta">&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <img
+            class="estilo-imagen-demo"
+            src="https://picsum.photos/seed/html5/700/200"
+            alt="Imagen de ejemplo generada aleatoriamente por Picsum Photos"
+          >
+          <span class="nota-demostracion">↑ Imagen con src externo, alt descriptivo, y clase CSS para el ancho</span>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Uso adecuado</span>
+        <p class="parrafo-apartado">
+          Para imágenes locales usa una ruta relativa: <code>src="imagenes/foto.jpg"</code>.
+          Para imágenes en línea usa la URL completa: <code>src="https://..."</code>.
+          Puedes controlar el tamaño con CSS usando la clase en lugar de los atributos
+          <code>width</code> y <code>height</code>.
+        </p>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Siempre escribe un <code>alt</code> descriptivo y significativo. Si la imagen es solo decorativa,
+          usa <code>alt=""</code> para que los lectores de pantalla la ignoren. Especifica siempre
+          <code>width</code> y <code>height</code> para que la página no "salte" mientras carga.
+          Usa <code>loading="lazy"</code> para imágenes que están abajo en la página.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETAS: audio y source
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;audio&gt; &lt;source&gt;</span>
+      <span class="insignia-categoria insignia-multimedia">Multimedia</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          <code>&lt;audio&gt;</code> — Incrusta un reproductor de audio en la página.<br>
+          <code>&lt;source&gt;</code> — Especifica el archivo de audio y su formato. Se usan varios
+          <code>&lt;source&gt;</code> para garantizar compatibilidad: el navegador usa el primero que pueda reproducir.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-comentario">&lt;!-- controls muestra los controles de reproducción --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;audio</span> <span class="codigo-atributo">controls</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-comentario">&lt;!-- el navegador usa el primero que soporte --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;source</span> <span class="codigo-atributo">src</span>=<span class="codigo-valor">"audio.mp3"</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"audio/mpeg"</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;source</span> <span class="codigo-atributo">src</span>=<span class="codigo-valor">"audio.ogg"</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"audio/ogg"</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-comentario">&lt;!-- mensaje si el navegador no soporta audio --&gt;</span><br>
+            &nbsp;&nbsp;Tu navegador no soporta audio HTML5.<br>
+            <span class="codigo-etiqueta">&lt;/audio&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <audio class="estilo-audio-demo" controls>
+            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento audio.
+          </audio>
+          <span class="nota-demostracion">↑ Reproductor de audio con controles nativos del navegador</span>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Siempre usa <code>controls</code> para que el usuario pueda controlar la reproducción.
+          Evita <code>autoplay</code>: puede molestar a los visitantes y algunos navegadores lo bloquean.
+          Provee al menos formato MP3 para máxima compatibilidad entre navegadores.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <video>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;video&gt;</span>
+      <span class="insignia-categoria insignia-multimedia">Multimedia</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Incrusta un reproductor de video directamente en la página sin necesidad de instalar
+          plugins externos. Funciona igual que <code>&lt;audio&gt;</code> pero para video.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-comentario">&lt;!-- poster: imagen de portada antes de reproducir --&gt;</span><br>
+            <span class="codigo-etiqueta">&lt;video</span> <span class="codigo-atributo">controls</span> <span class="codigo-atributo">width</span>=<span class="codigo-valor">"640"</span> <span class="codigo-atributo">poster</span>=<span class="codigo-valor">"miniatura.jpg"</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;source</span> <span class="codigo-atributo">src</span>=<span class="codigo-valor">"video.mp4"</span>  <span class="codigo-atributo">type</span>=<span class="codigo-valor">"video/mp4"</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-etiqueta">&lt;source</span> <span class="codigo-atributo">src</span>=<span class="codigo-valor">"video.webm"</span> <span class="codigo-atributo">type</span>=<span class="codigo-valor">"video/webm"</span><span class="codigo-etiqueta">&gt;</span><br>
+            &nbsp;&nbsp;Tu navegador no soporta video HTML5.<br>
+            <span class="codigo-etiqueta">&lt;/video&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <video
+            class="estilo-video-demo"
+            controls
+            poster="https://picsum.photos/seed/video/700/300"
+          >
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento video.
+          </video>
+          <span class="nota-demostracion">↑ Video con controls, poster (miniatura) y múltiples fuentes</span>
+        </div>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Usa siempre <code>poster</code> para mostrar una imagen de portada antes de que el video cargue.
+          Para mejorar la accesibilidad, agrega subtítulos usando la etiqueta <code>&lt;track&gt;</code>.
+          Para videos muy pesados considera YouTube o Vimeo e incrústalos con un <code>&lt;iframe&gt;</code>.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+
+  <!-- ════════════════════════
+       ETIQUETA: <iframe>
+  ════════════════════════ -->
+  <article class="bloque-etiqueta">
+    <div class="cabecera-bloque">
+      <span class="nombre-etiqueta-titulo">&lt;iframe&gt;</span>
+      <span class="insignia-categoria insignia-multimedia">Multimedia</span>
+    </div>
+    <div class="interior-bloque">
+
+      <div class="apartado">
+        <span class="titulo-apartado">Definición</span>
+        <p class="parrafo-apartado">
+          Incrusta un documento o página web externa dentro de la página actual.
+          Se usa comúnmente para insertar mapas de Google Maps, videos de YouTube,
+          formularios externos, y otros contenidos de terceros.
+        </p>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Sintaxis básica</span>
+        <div class="bloque-codigo">
+          <code>
+            <span class="codigo-etiqueta">&lt;iframe</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">src</span>=<span class="codigo-valor">"https://url-del-contenido.com"</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">width</span>=<span class="codigo-valor">"600"</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">height</span>=<span class="codigo-valor">"400"</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">title</span>=<span class="codigo-valor">"Descripción del contenido"</span>  <span class="codigo-comentario">&lt;!-- obligatorio para accesibilidad --&gt;</span><br>
+            &nbsp;&nbsp;<span class="codigo-atributo">loading</span>=<span class="codigo-valor">"lazy"</span>                      <span class="codigo-comentario">&lt;!-- carga solo cuando es visible --&gt;</span><br>
+            <span class="codigo-etiqueta">&gt;&lt;/iframe&gt;</span>
+          </code>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Ejemplo práctico</span>
+        <div class="caja-demostracion">
+          <iframe
+            class="estilo-iframe-demo"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-74.2071,4.5137,-73.9960,4.8350&layer=mapnik"
+            height="250"
+            title="Mapa de Bogotá, Colombia"
+            loading="lazy"
+          ></iframe>
+          <span class="nota-demostracion">↑ Mapa de Bogotá incrustado con &lt;iframe&gt; desde OpenStreetMap</span>
+        </div>
+      </div>
+
+      <div class="apartado">
+        <span class="titulo-apartado">Uso adecuado</span>
+        <p class="parrafo-apartado">
+          Para incrustar un video de YouTube: ve al video, haz clic en "Compartir" → "Insertar"
+          y copia el código <code>&lt;iframe&gt;</code> que te dan. Para Google Maps: "Compartir" → "Insertar un mapa".
+        </p>
+      </div>
+
+      <div class="caja-buenas-practicas">
+        <span class="titulo-buenas-practicas">✦ Buenas prácticas</span>
+        <p class="texto-buenas-practicas">
+          Siempre agrega el atributo <code>title</code> para que los lectores de pantalla describan
+          qué hay dentro del iframe. Usa <code>loading="lazy"</code> para mejorar la velocidad.
+          Solo incrusta contenido de fuentes de confianza; un iframe carga una página completa
+          con su propio JavaScript.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <nav class="ruta-navegacion">
+    <a href="/Pantallas/tablas.html" class="enlace-ruta">← Anterior: Tablas</a>
+    <span class="separador-ruta">·</span>
+    <a href="/index.html" class="enlace-ruta">Volver al inicio →</a>
+  </nav>
+
+</main>
+
+<footer class="pie-sitio">
+  <p class="texto-pie">Blog Educativo · Etiquetas HTML · &copy; 2025</p>
+  <p class="texto-pie">
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" class="enlace-pie" target="_blank" rel="noopener">MDN Web Docs</a> ·
+    <a href="https://www.w3schools.com/html/" class="enlace-pie" target="_blank" rel="noopener">W3Schools</a>
+  </p>
+</footer>
+
+  <!-- Botón flotante para volver al inicio de la página -->
+  <!-- JS lo muestra/oculta según el scroll con la clase "boton-arriba-visible" -->
+  <button class="boton-arriba" id="boton-arriba" title="Volver arriba">↑</button>
+
+  <!-- Cargamos el archivo JavaScript del blog -->
+  <!-- defer = espera a que el HTML cargue antes de ejecutar el script -->
+  <script src="/Funciones/funtion.js" defer></script>
+</body>
+</html>
