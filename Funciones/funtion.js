@@ -72,7 +72,10 @@ function configurarFormulario() {
     // que es recargar la página al hacer submit
     evento.preventDefault();
 
-    // ── Validación del campo de nombre ──────────────────────────
+
+    // ── Validación del campo de nombre ─
+    // ── Validación del campo de nombre ──
+
     // Buscamos el campo con id "campo-nombre"
     var campNombre = document.getElementById('campo-nombre');
 
@@ -99,7 +102,9 @@ function configurarFormulario() {
 
     }
 
-    // ── Validación del campo de correo ───────────────────────────
+
+    // ── Validación del campo de correo ─
+    // ── Validación del campo de correo ─
     var campCorreo = document.getElementById('campo-correo');
     var valorCorreo = campCorreo.value.trim();
 
@@ -307,7 +312,11 @@ function configurarCopiarCodigo() {
         var textoOriginal = bloque.getAttribute('title');
 
         // Cambiamos el título temporalmente para dar feedback
+
         bloque.setAttribute('title', '✅ ¡Código copiado!');
+
+        bloque.setAttribute('title', ' ¡Código copiado!');
+
 
         // Añadimos una clase visual de "copiado"
         bloque.classList.add('bloque-codigo-copiado');

@@ -4,11 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog HTML — Formularios</title>
+
   <link rel="stylesheet" href="/Estilos/style.css" />
+
+  <link rel="stylesheet" href="estilos.css" />
+
 </head>
 <body>
 
 <header class="cabecera-sitio">
+
   <a href="/index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
   <nav class="menu-sitio">
     <ul class="lista-menu">
@@ -18,6 +23,17 @@
       <li><a href="/Pantallas/formularios.html"   class="enlace-menu">Formularios</a></li>
       <li><a href="/Pantallas/tablas.html"        class="enlace-menu">Tablas</a></li>
       <li><a href="/Pantallas/multimedia.html"    class="enlace-menu">Multimedia</a></li>
+
+  <a href="index.html" class="logo-sitio">&lt;<span class="logo-sitio-acento">html</span>&gt; blog</a>
+  <nav class="menu-sitio">
+    <ul class="lista-menu">
+      <li><a href="estructurales.html" class="enlace-menu">Estructurales</a></li>
+      <li><a href="texto.html"         class="enlace-menu">Texto</a></li>
+      <li><a href="listas.html"        class="enlace-menu">Listas</a></li>
+      <li><a href="formularios.html"   class="enlace-menu">Formularios</a></li>
+      <li><a href="tablas.html"        class="enlace-menu">Tablas</a></li>
+      <li><a href="multimedia.html"    class="enlace-menu">Multimedia</a></li>
+
     </ul>
   </nav>
 </header>
@@ -25,7 +41,11 @@
 <main class="pagina-categoria">
 
   <nav class="ruta-navegacion">
+
     <a href="/index.html" class="enlace-ruta">Inicio</a>
+
+    <a href="index.html" class="enlace-ruta">Inicio</a>
+
     <span class="separador-ruta">/</span>
     <span class="pagina-actual-ruta">Formularios</span>
   </nav>
@@ -40,9 +60,10 @@
   </div>
 
 
-  <!-- ════════════════════════
-       ETIQUETA: <form>
-  ════════════════════════ -->
+
+  <!-- ETIQUETA: <form>-->
+
+  <!-- ETIQUETA: <form> -->
   <article class="bloque-etiqueta">
     <div class="cabecera-bloque">
       <span class="nombre-etiqueta-titulo">&lt;form&gt;</span>
@@ -82,9 +103,13 @@
   </article>
 
 
+
   <!-- ════════════════════════
        ETIQUETAS: label e input
   ════════════════════════ -->
+
+  <!--ETIQUETAS: label e input -->
+
   <article class="bloque-etiqueta">
     <div class="cabecera-bloque">
       <span class="nombre-etiqueta-titulo">&lt;label&gt; &lt;input&gt;</span>
@@ -148,9 +173,11 @@
   </article>
 
 
-  <!-- ════════════════════════
-       ETIQUETAS: textarea, select, button, fieldset
-  ════════════════════════ -->
+
+  <!--ETIQUETAS: textarea, select, button, fieldset-->
+
+  <!--ETIQUETAS: textarea, select, button, fieldset -->
+
   <article class="bloque-etiqueta">
     <div class="cabecera-bloque">
       <span class="nombre-etiqueta-titulo">&lt;textarea&gt; &lt;select&gt; &lt;button&gt; &lt;fieldset&gt; &lt;legend&gt;</span>
@@ -194,6 +221,7 @@
           <!-- onsubmit: evita que recargue la página y muestra un mensaje -->
           <form class="estilo-formulario-demo" onsubmit="event.preventDefault(); alert('¡Formulario enviado correctamente!');">
 
+
             <fieldset class="estilo-fieldset-demo">
               <legend class="estilo-legend-demo">Datos personales</legend>
 
@@ -230,6 +258,69 @@
             <button class="estilo-boton-demo" type="submit">Enviar formulario</button>
 
           </form>
+
+  <fieldset class="estilo-fieldset-demo">
+    <legend class="estilo-legend-demo">Datos personales</legend>
+
+    <label class="estilo-label-demo" for="campo-nombre">Nombre completo</label>
+    <input class="estilo-input-demo" type="text" id="campo-nombre" name="nombre" placeholder="Ej: María García" required>
+
+    <label class="estilo-label-demo" for="campo-apellido">Apellido</label>
+    <input class="estilo-input-demo" type="text" id="campo-apellido" name="apellido" placeholder="Ej: García">
+
+    <label class="estilo-label-demo" for="campo-correo">Correo electrónico</label>
+    <input class="estilo-input-demo" type="email" id="campo-correo" name="correo" placeholder="correo@ejemplo.com">
+
+    <label class="estilo-label-demo" for="campo-telefono">Teléfono</label>
+    <input class="estilo-input-demo" type="tel" id="campo-telefono" name="telefono" placeholder="3001234567">
+
+    <label class="estilo-label-demo" for="campo-direccion">Dirección</label>
+    <input class="estilo-input-demo" type="text" id="campo-direccion" name="direccion" placeholder="Calle 10 #20-30">
+
+    <label class="estilo-label-demo" for="campo-edad">Edad</label>
+    <input class="estilo-input-demo" type="number" id="campo-edad" name="edad" min="1" max="120">
+
+    <label class="estilo-label-demo" for="campo-fecha">Fecha de nacimiento</label>
+    <input class="estilo-input-demo" type="date" id="campo-fecha" name="fecha">
+
+  </fieldset>
+
+
+  <fieldset class="estilo-fieldset-margen-demo">
+    <legend class="estilo-legend-demo">Preferencias</legend>
+
+    <label class="estilo-label-demo" for="campo-nivel">Nivel de HTML</label>
+    <select class="estilo-select-demo" id="campo-nivel" name="nivel">
+      <option value="">Selecciona una opción...</option>
+      <option value="principiante">Principiante</option>
+      <option value="intermedio">Intermedio</option>
+      <option value="avanzado">Avanzado</option>
+    </select>
+
+    <label class="estilo-label-demo">Lenguaje favorito</label>
+    <select class="estilo-select-demo" name="lenguaje">
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JavaScript</option>
+      <option>Python</option>
+    </select>
+
+    <label class="estilo-label-checkbox-demo">
+      <input class="estilo-checkbox-demo" type="checkbox" name="boletin">
+      Recibir novedades por correo
+    </label>
+
+  </fieldset>
+
+
+  <label class="estilo-label-demo" for="campo-mensaje">Mensaje o consulta</label>
+  <textarea class="estilo-textarea-demo" id="campo-mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+  <button class="estilo-boton-demo" type="submit">Enviar formulario</button>
+
+</form>
+
+
         </div>
       </div>
 
@@ -246,9 +337,15 @@
   </article>
 
   <nav class="ruta-navegacion">
+
     <a href="/Pantallas/listas.html" class="enlace-ruta">← Anterior: Listas</a>
     <span class="separador-ruta">·</span>
     <a href="/Pantallas/tablas.html" class="enlace-ruta">Siguiente: Tablas →</a>
+
+    <a href="listas.html" class="enlace-ruta">← Anterior: Listas</a>
+    <span class="separador-ruta">·</span>
+    <a href="tablas.html" class="enlace-ruta">Siguiente: Tablas →</a>
+
   </nav>
 
 </main>
@@ -265,6 +362,10 @@
   <button class="boton-arriba" id="boton-arriba" title="Volver arriba">↑</button>
 
   <!-- Cargamos el archivo JavaScript del blog -->
+
   <script src="/Funciones/funtion.js" defer></script>
+
+  <script src="funciones.js" defer></script>
+
 </body>
 </html>
