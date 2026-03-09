@@ -8,9 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Fraunces:ital,wght@0,300;0,700;1,300&display=swap');
 
 
-/* ─────────────────────────────────────────────────────────────
-   VARIABLES DE COLOR
-───────────────────────────────────────────────────────────── */
+/*
+   VARIABLES DE COLOR */
 :root {
   --color-fondo:       #0d0d0d;
   --color-superficie:  #161616;
@@ -29,9 +28,9 @@
 }
 
 
-/* ─────────────────────────────────────────────────────────────
+/* 
    ESTILOS BASE
-───────────────────────────────────────────────────────────── */
+ */
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -57,9 +56,7 @@ body {
 ::-webkit-scrollbar-thumb:hover { background-color: var(--color-gris); }
 
 
-/* ─────────────────────────────────────────────────────────────
-   CABECERA DEL SITIO
-───────────────────────────────────────────────────────────── */
+/*CABECERA DEL SITIO*/
 
 .cabecera-sitio {
   background-color: var(--color-superficie);
@@ -128,9 +125,7 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
-   PIE DE PÁGINA
-───────────────────────────────────────────────────────────── */
+/* PIE DE PÁGINA */
 
 .pie-sitio {
   border-top: 1px solid var(--color-borde);
@@ -156,9 +151,7 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
-   PÁGINA DE INICIO (index.html)
-───────────────────────────────────────────────────────────── */
+/* PÁGINA DE INICIO (index.html) */
 
 .seccion-inicio {
   max-width: 900px;
@@ -269,9 +262,9 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
+/* 
    PÁGINAS DE CATEGORÍA
-───────────────────────────────────────────────────────────── */
+ */
 
 .pagina-categoria {
   max-width: 880px;
@@ -335,9 +328,9 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
-   BLOQUE DE CADA ETIQUETA HTML
-───────────────────────────────────────────────────────────── */
+/*
+  BLOQUE DE CADA ETIQUETA HTML
+ */
 
 .bloque-etiqueta {
   background-color: var(--color-tarjeta);
@@ -392,9 +385,9 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
-   APARTADOS (Definición, Sintaxis, Ejemplo, Uso, Consejo)
-───────────────────────────────────────────────────────────── */
+/* 
+APARTADOS (Definición, Sintaxis, Ejemplo, Uso, Consejo)
+*/
 
 .apartado {
   margin-bottom: 1.25rem;
@@ -427,9 +420,7 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
-   BLOQUES DE CÓDIGO
-───────────────────────────────────────────────────────────── */
+/* BLOQUES DE CÓDIGO */
 
 .bloque-codigo {
   background-color: var(--color-codigo);
@@ -452,9 +443,8 @@ body {
 .codigo-comentario { color: #586069; font-style: italic; }
 
 
-/* ─────────────────────────────────────────────────────────────
-   CAJA DE DEMOSTRACIÓN
-───────────────────────────────────────────────────────────── */
+/*
+   CAJA DE DEMOSTRACIÓN */
 
 .caja-demostracion {
   background-color: var(--color-fondo);
@@ -473,9 +463,8 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
-   ESTILOS PARA ELEMENTOS DENTRO DE LAS DEMOS
-───────────────────────────────────────────────────────────── */
+/* ESTILOS PARA ELEMENTOS DENTRO DE LAS DEMOS
+ */
 
 /* -- Demo de <header> -- */
 .estilo-ejemplo-practico-header {
@@ -644,9 +633,7 @@ body {
 .estilo-iframe-demo  { width:100%; border-radius:3px; border:1px solid var(--color-borde); display:block; }
 
 
-/* ─────────────────────────────────────────────────────────────
-   CAJA DE BUENAS PRÁCTICAS
-───────────────────────────────────────────────────────────── */
+/* CAJA DE BUENAS PRÁCTICAS*/
 
 .caja-buenas-practicas {
   border-left: 3px solid var(--color-amarillo);
@@ -680,9 +667,7 @@ body {
 }
 
 
-/* ─────────────────────────────────────────────────────────────
-   RESPONSIVE — pantallas pequeñas
-───────────────────────────────────────────────────────────── */
+/* RESPONSIVE — pantallas pequeñas */
 @media (max-width: 600px) {
   .lista-menu               { display: none; }
   .titulo-inicio            { font-size: 2.2rem; }
@@ -691,9 +676,9 @@ body {
 }
 
 
-/* ----------------------------------------------------------------
+/* 
    ESTILOS PARA LAS FUNCIONES DE JAVASCRIPT
----------------------------------------------------------------- */
+*/
 
 /* ── Botón flotante "Volver arriba" ── */
 
